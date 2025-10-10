@@ -138,7 +138,7 @@ export default function Hero() {
                   Full Name *
                 </label>
                 <div className="relative">
-                  <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+                  <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 z-10" size={20} />
                   <input
                     type="text"
                     id="name"
@@ -146,7 +146,7 @@ export default function Hero() {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-button focus:ring-2 focus:ring-pigment-blue focus:border-transparent transition-all duration-200"
+                    className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-button focus:ring-2 focus:ring-pigment-blue focus:border-transparent transition-all duration-200"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -158,7 +158,7 @@ export default function Hero() {
                   Phone Number *
                 </label>
                 <div className="relative">
-                  <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+                  <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 z-10" size={20} />
                   <input
                     type="tel"
                     id="phone"
@@ -166,7 +166,7 @@ export default function Hero() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     required
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-button focus:ring-2 focus:ring-pigment-blue focus:border-transparent transition-all duration-200"
+                    className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-button focus:ring-2 focus:ring-pigment-blue focus:border-transparent transition-all duration-200"
                     placeholder="(437) 430-2442"
                   />
                 </div>
@@ -200,14 +200,14 @@ export default function Hero() {
                     Preferred Location *
                   </label>
                   <div className="relative">
-                    <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+                    <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 z-10" size={20} />
                     <select
                       id="location"
                       name="location"
                       value={formData.location}
                       onChange={handleInputChange}
                       required
-                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-button focus:ring-2 focus:ring-pigment-blue focus:border-transparent transition-all duration-200"
+                      className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-button focus:ring-2 focus:ring-pigment-blue focus:border-transparent transition-all duration-200 appearance-none bg-white"
                     >
                       <option value="">Select location</option>
                       <option value="brampton">Brampton</option>
@@ -221,14 +221,14 @@ export default function Hero() {
                     Preferred Time *
                   </label>
                   <div className="relative">
-                    <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+                    <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 z-10" size={20} />
                     <select
                       id="time"
                       name="time"
                       value={formData.time}
                       onChange={handleInputChange}
                       required
-                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-button focus:ring-2 focus:ring-pigment-blue focus:border-transparent transition-all duration-200"
+                      className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-button focus:ring-2 focus:ring-pigment-blue focus:border-transparent transition-all duration-200 appearance-none bg-white"
                     >
                       <option value="">Select time</option>
                       <option value="09:00">9:00 AM</option>
