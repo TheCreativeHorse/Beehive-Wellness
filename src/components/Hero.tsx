@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { Phone, Calendar, User, Clock } from 'lucide-react';
+import { Phone, User } from 'lucide-react';
 import { LayoutTextFlip } from '@/components/ui/layout-text-flip';
 
 interface FormData {
@@ -199,49 +199,43 @@ export default function Hero() {
                   <label htmlFor="location" className="block text-sm font-medium text-deep-charcoal mb-2">
                     Preferred Location *
                   </label>
-                  <div className="relative">
-                    <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 z-10" size={20} />
-                    <select
-                      id="location"
-                      name="location"
-                      value={formData.location}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-button focus:ring-2 focus:ring-pigment-blue focus:border-transparent transition-all duration-200 appearance-none bg-white"
-                    >
-                      <option value="">Select location</option>
-                      <option value="brampton">Brampton</option>
-                      <option value="scarborough">Scarborough</option>
-                    </select>
-                  </div>
+                  <select
+                    id="location"
+                    name="location"
+                    value={formData.location}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-button focus:ring-2 focus:ring-pigment-blue focus:border-transparent transition-all duration-200 appearance-none bg-white"
+                  >
+                    <option value="">Select location</option>
+                    <option value="brampton">Brampton</option>
+                    <option value="scarborough">Scarborough</option>
+                  </select>
                 </div>
 
                 <div>
                   <label htmlFor="time" className="block text-sm font-medium text-deep-charcoal mb-2">
                     Preferred Time *
                   </label>
-                  <div className="relative">
-                    <Clock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 z-10" size={20} />
-                    <select
-                      id="time"
-                      name="time"
-                      value={formData.time}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-button focus:ring-2 focus:ring-pigment-blue focus:border-transparent transition-all duration-200 appearance-none bg-white"
-                    >
-                      <option value="">Select time</option>
-                      <option value="09:00">9:00 AM</option>
-                      <option value="10:00">10:00 AM</option>
-                      <option value="11:00">11:00 AM</option>
-                      <option value="12:00">12:00 PM</option>
-                      <option value="13:00">1:00 PM</option>
-                      <option value="14:00">2:00 PM</option>
-                      <option value="15:00">3:00 PM</option>
-                      <option value="16:00">4:00 PM</option>
-                      <option value="17:00">5:00 PM</option>
-                    </select>
-                  </div>
+                  <select
+                    id="time"
+                    name="time"
+                    value={formData.time}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-button focus:ring-2 focus:ring-pigment-blue focus:border-transparent transition-all duration-200 appearance-none bg-white"
+                  >
+                    <option value="">Select time</option>
+                    <option value="09:00">9:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                  </select>
                 </div>
               </div>
 
