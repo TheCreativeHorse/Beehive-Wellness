@@ -8,7 +8,7 @@ export default function Gallery() {
       src: "/images/p1.jpg",
     },
     {
-      title: "Treatment Room",
+      title: "Beehive Wellness Therapy",
       button: "Book Now",
       src: "/images/p2.jpg",
     },
