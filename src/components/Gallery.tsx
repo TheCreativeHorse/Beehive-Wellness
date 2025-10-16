@@ -10,7 +10,7 @@ export default function Gallery() {
     {
       title: "Beehive Wellness Therapy",
       button: "Book Now",
-      src: "/images/p2.jpg",
+      src: "/images/p2 New.jpg",
     },
     {
       title: "IV Therapy Setup",
