@@ -84,10 +84,6 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-white lg:pr-8">
-            {/* Promo Chip */}
-            <div className="inline-flex items-center bg-white text-pigment-blue px-4 py-2 rounded-full text-sm font-semibold mb-6 border-2 border-pigment-blue">
-              🎉 20% off first session
-            </div>
 
             <h1 className="mb-8 leading-relaxed">
               <LayoutTextFlip
