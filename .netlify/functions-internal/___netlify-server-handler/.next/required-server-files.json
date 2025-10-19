@@ -60,7 +60,12 @@
       "dangerouslyAllowSVG": true,
       "contentSecurityPolicy": "default-src 'self'; script-src 'none'; sandbox;",
       "contentDispositionType": "attachment",
-      "remotePatterns": [],
+      "remotePatterns": [
+        {
+          "protocol": "https",
+          "hostname": "**"
+        }
+      ],
       "unoptimized": false
     },
     "devIndicators": {

@@ -1,7 +1,6 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
-import Image from 'next/image';
 
 const teamMembers = [
   {
@@ -75,14 +74,16 @@ export default function Team() {
               className="card-hover bg-white rounded-card p-6 shadow-card text-center"
             >
               {/* Doctor Photo */}
-              <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden">
-                <Image
+              <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden bg-gray-200">
+                <img
                   src={member.image}
                   alt={member.name}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 200px, (max-width: 1024px) 250px, 300px"
+                  className="w-full h-full object-cover"
                   loading="lazy"
+                  onError={(e) => {
+                    console.error(`Failed to load image: ${member.image}`);
+                    e.currentTarget.style.display = 'none';
+                  }}
                 />
               </div>
 

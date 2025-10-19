@@ -12,7 +12,6 @@ import {
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
-import Image from 'next/image';
 import { Phone } from 'lucide-react';
 
 export default function Header() {
@@ -54,13 +53,14 @@ export default function Header() {
       <NavBody>
         <div className="flex-shrink-0">
           <NavbarLogo>
-            <Image
+            <img
               src="/images/Beehive Wellness- Logo.svg"
               alt="Beehive Wellness"
-              width={200}
-              height={80}
               className="h-16 w-auto filter brightness-0 invert"
-              priority
+              onError={(e) => {
+                console.error('Failed to load logo');
+                e.currentTarget.style.display = 'none';
+              }}
             />
           </NavbarLogo>
         </div>
@@ -74,7 +74,7 @@ export default function Header() {
             className="flex items-center space-x-2"
           >
             <Phone size={16} />
-            <span>Call: 437-430-2442</span>
+            <span>Call: (647) 801-2442</span>
           </NavbarButton>
         </div>
       </NavBody>
@@ -83,13 +83,14 @@ export default function Header() {
       <MobileNav>
         <MobileNavHeader>
           <NavbarLogo>
-            <Image
+            <img
               src="/images/Beehive Wellness- Logo.svg"
               alt="Beehive Wellness"
-              width={160}
-              height={64}
               className="h-12 w-auto filter brightness-0 invert"
-              priority
+              onError={(e) => {
+                console.error('Failed to load mobile logo');
+                e.currentTarget.style.display = 'none';
+              }}
             />
           </NavbarLogo>
           <MobileNavToggle
@@ -121,7 +122,7 @@ export default function Header() {
               className="w-full flex items-center justify-center space-x-2"
             >
               <Phone size={16} />
-              <span>Call: 437-430-2442</span>
+              <span>Call: (647) 801-2442</span>
             </NavbarButton>
           </div>
         </MobileNavMenu>

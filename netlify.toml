@@ -5,5 +5,15 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Site configuration for bookings.beehivewellness.ca
+[context.production]
+  command = "npm run build"
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# Redirects for proper domain handling
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -89,6 +89,20 @@ export default function RootLayout({
             `,
           }}
         />
+        
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-KRQBJNDS');
+            `,
+          }}
+        />
+        {/* End Google Tag Manager */}
         {/* LocalBusiness Schema */}
         <script
           type="application/ld+json"
@@ -99,7 +113,7 @@ export default function RootLayout({
               "name": "Beehive Wellness",
               "description": "Naturopathic clinic specializing in lung and IV therapy treatments",
               "url": "https://beehivewellness.ca",
-              "telephone": "437-430-2442",
+              "telephone": "(647) 801-2442",
               "email": "info@beehivewellness.ca",
               "address": [
                 {
@@ -218,6 +232,17 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${roboto.variable} antialiased`}
       >
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe 
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KRQBJNDS"
+            height="0" 
+            width="0" 
+            style={{display: 'none', visibility: 'hidden'}}
+          />
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
+        
         {children}
       </body>
     </html>

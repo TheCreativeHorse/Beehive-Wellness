@@ -112,7 +112,7 @@ Handles booking form submissions.
 ```json
 {
   "name": "John Doe",
-  "phone": "437-430-2442",
+  "phone": "(647) 801-2442",
   "service": "lung-therapy",
   "date": "2024-01-15",
   "time": "10:00"
@@ -159,7 +159,7 @@ Handles booking form submissions.
 
 ## Contact Information
 
-- **Phone**: 437-430-2442
+- **Phone**: (647) 801-2442
 - **Email**: info@beehivewellness.ca
 - **Brampton**: Unit #127, 40 Finchgate Blvd, Brampton, ON L6T 3H9
 - **Scarborough**: Unit #210, 2130 Lawrence Ave E, Scarborough, ON M1R 3A6

@@ -50,7 +50,7 @@ npm start
 Create `.env.local` for production:
 ```env
 NEXT_PUBLIC_SITE_URL=https://yourdomain.com
-NEXT_PUBLIC_PHONE=437-430-2442
+NEXT_PUBLIC_PHONE=(647) 801-2442
 NEXT_PUBLIC_EMAIL=info@beehivewellness.ca
 ```
 
@@ -71,7 +71,7 @@ NEXT_PUBLIC_EMAIL=info@beehivewellness.ca
 
 1. **Set up Google Ads account**
 2. **Create conversion tracking:**
-   - Phone calls (437-430-2442)
+   - Phone calls ((647) 801-2442)
    - Form submissions
 3. **Add tracking codes to layout.tsx**
 4. **Set up Google Analytics 4**

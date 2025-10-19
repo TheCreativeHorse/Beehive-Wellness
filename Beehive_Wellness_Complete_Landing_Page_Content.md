@@ -5,7 +5,7 @@
 
 ## Header (Sticky)
 - **Logo:** Beehive Wellness
-- **Primary CTA button:** “Call Now: 437-430-2442”
+- **Primary CTA button:** “Call Now: (647) 801-2442”
 
 ---
 
@@ -25,7 +25,7 @@ Personalized care in Brampton & Scarborough—Book your wellness session today.
 - Privacy Note: *Your information is secure and confidential*  
 
 **Click-to-Call:**  
-437-430-2442  
+(647) 801-2442  
 
 **Hero Image:**  
 Relaxed patient receiving IV therapy or breathing treatment, calm & bright atmosphere.  
@@ -116,7 +116,7 @@ Unit #127, 40 Finchgate Blvd, Brampton, ON L6T 3H9
 **Scarborough Clinic**  
 Unit #210, 2130 Lawrence Ave E, Scarborough, ON M1R 3A6  
 
-**Phone:** 437-430-2442  
+**Phone:** (647) 801-2442  
 
 *(Optional: embed Google Maps for both locations)*  
 
@@ -125,7 +125,7 @@ Unit #210, 2130 Lawrence Ave E, Scarborough, ON M1R 3A6
 ## Footer
 - **Links:** About | Privacy Policy | Terms  
 - **Social Media:** (Add links if available)  
-- **Phone:** 437-430-2442  
+- **Phone:** (647) 801-2442  
 
 ---
 

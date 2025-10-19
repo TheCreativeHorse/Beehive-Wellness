@@ -104,7 +104,7 @@ export default function Hero() {
                 className="flex items-center space-x-2 text-white hover:text-white/80 transition-colors duration-200"
               >
                 <Phone size={24} />
-                <span className="text-lg font-semibold">437-430-2442</span>
+                <span className="text-lg font-semibold">(647) 801-2442</span>
               </a>
             </div>
           </div>
