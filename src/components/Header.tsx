@@ -74,7 +74,7 @@ export default function Header() {
             className="flex items-center space-x-2"
           >
             <Phone size={16} />
-            <span>Call: (647) 801-2442</span>
+            <span>Call: <a href="tel:+16478012442" className="underline">(647) 801-2442</a></span>
           </NavbarButton>
         </div>
       </NavBody>
@@ -122,7 +122,7 @@ export default function Header() {
               className="w-full flex items-center justify-center space-x-2"
             >
               <Phone size={16} />
-              <span>Call: (647) 801-2442</span>
+              <span>Call: <a href="tel:+16478012442" className="underline">(647) 801-2442</a></span>
             </NavbarButton>
           </div>
         </MobileNavMenu>

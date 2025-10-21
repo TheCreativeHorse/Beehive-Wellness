@@ -163,7 +163,7 @@ export default function Hero() {
                     onChange={handleInputChange}
                     required
                     className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-button focus:ring-2 focus:ring-pigment-blue focus:border-transparent transition-all duration-200"
-                    placeholder="(437) 430-2442"
+                    placeholder="(647) 801-2442"
                   />
                 </div>
               </div>
