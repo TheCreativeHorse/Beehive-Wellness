@@ -12,7 +12,7 @@ export const Navbar = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "absolute top-0 z-50 w-full bg-transparent",
+      "absolute top-0 z-50 w-full bg-gradient-primary/95 backdrop-blur-sm",
       className
     )}
     {...props}

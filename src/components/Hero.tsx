@@ -67,7 +67,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-primary w-full" style={{ paddingTop: '80px' }}>
+    <section className="relative min-h-screen flex items-center bg-gradient-primary w-full" style={{ paddingTop: '120px' }}>
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -85,15 +85,15 @@ export default function Hero() {
           {/* Left Content */}
           <div className="text-white lg:pr-8">
 
-            <h1 className="mb-6 lg:mb-8 leading-relaxed">
-              <LayoutTextFlip
-                text="Restore Your Health with"
-                words={["Lung Therapy", "IV Therapy"]}
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-inter font-bold leading-relaxed"
-              />
+            <h1 className="mb-6 lg:mb-8 leading-relaxed text-center lg:text-left">
+              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-inter font-bold leading-tight">
+                <div>Restore Your</div>
+                <div>Health with</div>
+                <div className="text-white">Lung Therapy</div>
+              </div>
             </h1>
 
-            <p className="text-lg sm:text-xl md:text-2xl mb-6 lg:mb-8 text-white/90 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-lg sm:text-xl md:text-2xl mb-6 lg:mb-8 text-white/90 leading-relaxed text-center lg:text-left">
               Personalized care in Brampton & Scarborough—Book your wellness session today.
             </p>
 
