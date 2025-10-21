@@ -50,7 +50,7 @@ export default function Header() {
   return (
     <Navbar>
       {/* Desktop Navigation */}
-      <NavBody>
+      <NavBody className="hidden lg:flex">
         <div className="flex-shrink-0">
           <NavbarLogo>
             <img
@@ -107,25 +107,10 @@ export default function Header() {
                 }}
               />
             </NavbarLogo>
-            <div className="flex items-center space-x-2">
-              <a
-                href="tel:+16478012442"
-                className="flex items-center space-x-1 px-2 py-2 bg-white text-pigment-blue rounded-button hover:bg-gray-100 transition-colors duration-200 font-medium text-sm"
-              >
-                <Phone size={14} />
-                <span>Call</span>
-              </a>
-              <button
-                onClick={scrollToForm}
-                className="px-3 py-2 bg-pigment-blue text-white rounded-button hover:bg-pigment-blue/90 transition-colors duration-200 font-medium text-sm"
-              >
-                Book Now
-              </button>
-              <MobileNavToggle
-                isOpen={isMobileMenuOpen}
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              />
-            </div>
+            <MobileNavToggle
+              isOpen={isMobileMenuOpen}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            />
           </div>
         </MobileNavHeader>
 
