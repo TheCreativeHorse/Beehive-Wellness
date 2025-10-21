@@ -101,10 +101,10 @@ export default function Hero() {
             <div className="flex items-center space-x-4 mb-8">
               <a
                 href="tel:+16478012442"
-                className="flex items-center space-x-2 text-white hover:text-white/80 transition-colors duration-200"
+                className="flex items-center space-x-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-button px-6 py-3 text-white hover:bg-white/30 hover:border-white/50 transition-all duration-200"
               >
                 <Phone size={24} />
-                <span className="text-lg font-semibold">(647) 801-2442</span>
+                <span className="text-lg font-semibold">Call: (647) 801-2442</span>
               </a>
             </div>
           </div>

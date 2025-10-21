@@ -67,14 +67,20 @@ export default function Header() {
         <div className="flex-1 flex justify-center">
           <NavItems items={navItems} />
         </div>
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 flex items-center space-x-3">
+          <a
+            href="tel:+16478012442"
+            className="flex items-center space-x-2 px-4 py-2 bg-white text-pigment-blue rounded-button hover:bg-gray-100 transition-colors duration-200 font-medium"
+          >
+            <Phone size={16} />
+            <span>Call: (647) 801-2442</span>
+          </a>
           <NavbarButton 
             variant="primary"
             onClick={scrollToForm}
             className="flex items-center space-x-2"
           >
-            <Phone size={16} />
-            <span>Call: <a href="tel:+16478012442" className="underline">(647) 801-2442</a></span>
+            <span>Book Now</span>
           </NavbarButton>
         </div>
       </NavBody>
@@ -113,6 +119,14 @@ export default function Header() {
             </button>
           ))}
           <div className="flex w-full flex-col gap-4 pt-4">
+            <a
+              href="tel:+16478012442"
+              className="w-full flex items-center justify-center space-x-2 px-4 py-3 bg-white text-pigment-blue rounded-button hover:bg-gray-100 transition-colors duration-200 font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <Phone size={16} />
+              <span>Call: (647) 801-2442</span>
+            </a>
             <NavbarButton
               onClick={() => {
                 scrollToForm();
@@ -121,8 +135,7 @@ export default function Header() {
               variant="primary"
               className="w-full flex items-center justify-center space-x-2"
             >
-              <Phone size={16} />
-              <span>Call: <a href="tel:+16478012442" className="underline">(647) 801-2442</a></span>
+              <span>Book Now</span>
             </NavbarButton>
           </div>
         </MobileNavMenu>
