@@ -26,7 +26,7 @@ export const LayoutTextFlip: React.FC<LayoutTextFlipProps> = ({
   }, [words.length]);
 
   return (
-    <div className="flex flex-col items-start">
+    <div className="flex flex-col items-center lg:items-start">
       <span className={cn("text-white font-inter font-bold leading-tight", className)}>{text}</span>
       <div className="relative inline-block min-w-[200px] min-h-[1.2em] mt-4">
         <AnimatePresence mode="wait">
