@@ -122,20 +122,12 @@ export default function Header() {
             <button
               key={`mobile-link-${idx}`}
               onClick={() => scrollToSection(item.link.replace('#', ''))}
-              className="relative text-neutral-600 dark:text-neutral-300 text-left w-full py-2"
+              className="relative text-white text-left w-full py-4 px-4 hover:bg-white/10 transition-colors duration-200"
             >
-              <span className="block">{item.name}</span>
+              <span className="block text-lg font-medium">{item.name}</span>
             </button>
           ))}
-          <div className="flex w-full flex-col gap-3 pt-4">
-            <a
-              href="tel:+16478012442"
-              className="w-full flex items-center justify-center space-x-2 px-4 py-3 bg-white text-pigment-blue rounded-button hover:bg-gray-100 transition-colors duration-200 font-medium"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              <Phone size={18} />
-              <span>Call: (647) 801-2442</span>
-            </a>
+          <div className="flex w-full flex-col gap-3 pt-6">
             <NavbarButton
               onClick={() => {
                 scrollToForm();

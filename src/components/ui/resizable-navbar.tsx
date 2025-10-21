@@ -156,7 +156,7 @@ export const MobileNavMenu = React.forwardRef<HTMLDivElement, MobileNavMenuProps
       <div
         ref={ref}
         className={cn(
-          "absolute top-full left-0 right-0 bg-background border-b shadow-lg px-4 py-4 space-y-4",
+          "absolute top-full left-0 right-0 bg-gradient-primary border-b shadow-lg px-4 py-4 space-y-2",
           className
         )}
         {...props}
