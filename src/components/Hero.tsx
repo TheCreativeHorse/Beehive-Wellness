@@ -80,37 +80,38 @@ export default function Hero() {
         <div className="absolute inset-0 bg-pigment-blue/60"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="text-white lg:pr-8">
+          <div className="text-white lg:pr-8 text-center lg:text-left">
 
-            <h1 className="mb-8 leading-relaxed">
+            <h1 className="mb-6 lg:mb-8 leading-relaxed">
               <LayoutTextFlip
                 text="Restore Your Health with"
                 words={["Lung Therapy", "IV Therapy"]}
-                className="text-4xl md:text-5xl lg:text-6xl font-inter font-bold leading-relaxed"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-inter font-bold leading-relaxed"
               />
             </h1>
 
-            <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl mb-6 lg:mb-8 text-white/90 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               Personalized care in Brampton & Scarborough—Book your wellness session today.
             </p>
 
             {/* Click to Call */}
-            <div className="flex items-center space-x-4 mb-8">
+            <div className="flex justify-center lg:justify-start mb-6 lg:mb-8">
               <a
                 href="tel:+16478012442"
-                className="flex items-center space-x-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-button px-6 py-3 text-white hover:bg-white/30 hover:border-white/50 transition-all duration-200"
+                className="flex items-center space-x-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-button px-6 py-3 text-white hover:bg-white/30 hover:border-white/50 transition-all duration-200 text-center"
               >
-                <Phone size={24} />
-                <span className="text-lg font-semibold">Call: (647) 801-2442</span>
+                <Phone size={20} className="sm:hidden" />
+                <Phone size={24} className="hidden sm:block" />
+                <span className="text-base sm:text-lg font-semibold">Call: (647) 801-2442</span>
               </a>
             </div>
           </div>
 
           {/* Right Content - Booking Form */}
-          <div id="booking-form" className="bg-white rounded-card p-8 shadow-2xl">
+          <div id="booking-form" className="bg-white rounded-card p-6 sm:p-8 shadow-2xl mt-8 lg:mt-0">
             <h2 className="text-2xl font-inter font-bold text-deep-charcoal mb-6 text-center">
               Book Your Appointment
             </h2>

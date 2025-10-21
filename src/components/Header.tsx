@@ -67,18 +67,25 @@ export default function Header() {
         <div className="flex-1 flex justify-center">
           <NavItems items={navItems} />
         </div>
-        <div className="flex-shrink-0 flex items-center space-x-3">
+        <div className="flex-shrink-0 flex items-center space-x-2 lg:space-x-3">
           <a
             href="tel:+16478012442"
-            className="flex items-center space-x-2 px-4 py-2 bg-white text-pigment-blue rounded-button hover:bg-gray-100 transition-colors duration-200 font-medium"
+            className="hidden sm:flex items-center space-x-2 px-3 lg:px-4 py-2 bg-white text-pigment-blue rounded-button hover:bg-gray-100 transition-colors duration-200 font-medium text-sm lg:text-base"
           >
             <Phone size={16} />
             <span>Call: (647) 801-2442</span>
           </a>
+          <a
+            href="tel:+16478012442"
+            className="sm:hidden flex items-center space-x-1 px-2 py-2 bg-white text-pigment-blue rounded-button hover:bg-gray-100 transition-colors duration-200 font-medium text-sm"
+          >
+            <Phone size={14} />
+            <span>Call</span>
+          </a>
           <NavbarButton 
             variant="primary"
             onClick={scrollToForm}
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 text-sm lg:text-base"
           >
             <span>Book Now</span>
           </NavbarButton>
@@ -118,13 +125,13 @@ export default function Header() {
               <span className="block">{item.name}</span>
             </button>
           ))}
-          <div className="flex w-full flex-col gap-4 pt-4">
+          <div className="flex w-full flex-col gap-3 pt-4">
             <a
               href="tel:+16478012442"
               className="w-full flex items-center justify-center space-x-2 px-4 py-3 bg-white text-pigment-blue rounded-button hover:bg-gray-100 transition-colors duration-200 font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <Phone size={16} />
+              <Phone size={18} />
               <span>Call: (647) 801-2442</span>
             </a>
             <NavbarButton
