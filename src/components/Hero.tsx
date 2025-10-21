@@ -100,7 +100,7 @@ export default function Hero() {
             {/* Click to Call */}
             <div className="flex items-center space-x-4 mb-8">
               <a
-                href="tel:6478012442"
+                href="tel:+16478012442"
                 className="flex items-center space-x-2 text-white hover:text-white/80 transition-colors duration-200"
               >
                 <Phone size={24} />
